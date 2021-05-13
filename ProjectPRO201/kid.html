@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Men Shoes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="bar.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="product.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="text.css" />
+    <script src="kid.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .nav{position: fixed;}
+        @font-face{
+            font-family: Adidas;
+            src: url(texgyreadventor-bold.otf);
+        }
+        .men{
+                width: 100%;
+                background-color: white;
+                float: left;
+                margin-top: 10%;
+            } 
+            .load{
+                width: 100%;
+                background-color: white;
+                float: left;
+                margin-top: 2%;
+                padding-left: 145px;
+                box-sizing: border-box
+            } 
+            .men button{
+                 width: 100%;
+                 display: inline-block;
+                 padding: 15px 25px;
+                 font-size: 24px;
+                 cursor: pointer;
+                 text-align: center;
+                 text-decoration: none;
+                 outline: none;
+                 color: black;
+                 background-color: white;
+                border: none;
+                font-family: Adidas;
+            }
+            .hr{float: left;margin-top: 25px; width: 100px; height: 2px; background-color: black; text-align: center; box-sizing: border-box;}
+    </style>
+</head>
+
+<body onload="loadproduct('list')">
+    <div>
+        <div class="nav">
+            <div class="nav_header">
+                <div class="nav_title">
+                    <a href="barfixed.html"><img src="Untitled.png" /></a>
+                </div>
+            </div>
+            <div class="nav_btn">
+                <label for="nav_check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <input type="checkbox" name="" id="nav_check">
+            <div class="nav_links">
+                    <ul>
+                            <li>
+                                <a href="men.html">MEN</a>
+                                <ul>
+                                        <li><a href="adidas.html">Adidas</a></li>
+                                        <li><a href="nike.html">Nike</a></li>
+                                        <li><a href="vans.html">Vans</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                            <a href="women.html">WOMEN</a>
+                            <ul>
+                                    <li><a href="adidas.html">Adidas</a></li>
+                                    <li><a href="nike.html">Nike</a></li>
+                                    <li><a href="vans.html">Vans</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                            <a href="kid.html">KIDS</a>
+                            <ul>
+                                    <li><a href="kiddas.html">ADIDAS</a></li>
+                                    <li><a href="kidni.html">NIKE</a></li>
+                                    <li><a href="kidvans.html">VANS</a></li>
+                                </ul>
+                            </li>
+                            <div class="menu-spacer___1cHmT"></div>
+                            <a href="#">SPORTS</a>
+                            <a href="#">BRANDS</a>
+                        </ul>
+                <a href="chitiet.html"style="margin-left:55%;"><i class="fa fa-cart-plus" aria-hidden="true" style="font-size:30px"></i></a>
+                <a href="https://www.facebook.com/"style="margin-left:-1%;"><i class="fa fa-facebook-square" style="font-size:30px"></i></a>
+                <a href="https://www.instagram.com/"style="margin-left:-0.9%;"><i class="fa fa-instagram" style="font-size:30px"></i></a>
+            </div>
+        </div>
+        <div class="men">
+            <button>KIDS - ALL PRODUCTS</button>
+        </div>
+        <div class="hr"></div>
+        <div class="load">
+        <div id="list"></div>
+        <div id="detail">
+            <div><img src="" id="hinh"></div>
+            <div>
+                <p style="text-align:right; cursor: pointer" onclick="closedetail()">X</p>
+                <p id="ma"></p>
+                <h5 id="ten"></h5>
+                <p id="gia"></p>
+                <p>Select size:</p>
+    
+                <input type="radio" checked="checked" name="size" />3.5Y
+                <input type="radio" checked="checked" name="size" />4Y
+                <input type="radio" checked="checked" name="size" />4.5Y
+                <input type="radio" checked="checked" name="size" />5Y
+                <input type="radio" checked="checked" name="size" />6Y
+                <p><input type="button" value="BUY NOW" onclick="addproduct()" id="i1"></p>
+            </div>
+        </div>
+    </div>
+    <div class="mn">
+            <div class="mncon">
+                <h3>SIGN UP FOR NEWS & GET <span style="color:crimson;">15% OFF</span></h3>
+            </div>
+            <input type="text" placeholder="email" name="t3">
+            <div>
+                <p style="font-size: 15px"><br>By clicking the "Sign up" button, I confirm I am over 13 years of age.<br>
+                    Sign me up for adidas emails, featuring exclusive offers, latest product info,<br> news about
+                    upcoming events, and more.
+                    See our adidas privacy policy<br> for details. Selected products may be excluded<br> from the 15%
+                    off promotion.</p>
+            </div>
+        </div>
+        <!-- div cuối tên cty -->
+        <div class="mn2">
+            <p>Terms & Conditions Privacy Policy © 2018 ShoesFL Group</p>
+        </div>
+</body>
+
+</html>

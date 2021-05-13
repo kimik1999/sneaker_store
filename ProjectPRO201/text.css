@@ -1,0 +1,321 @@
+* {box-sizing: border-box}
+@font-face {
+    font-family: Yezzy;
+    src: url(Yeezy.ttf);
+  }
+  @font-face{
+    font-family: Adidas;
+    src: url(texgyreadventor-bold.otf);
+  }
+  @font-face{
+    font-family: Adidas1;
+    src: url(texgyreadventor-italic.otf);
+  }
+  @media only screen and (min-width: 768px) {
+  .caption {
+    position: relative; 
+    top: -350px; z-index: 1;
+    text-align: center;
+    font-family: Yezzy;
+    font-size: 40px;
+    box-sizing: border-box;
+    opacity: 0.9;
+  }
+  .caption a{text-decoration: none;color: orangered; box-sizing: border-box;}
+  .p {
+    position: relative; 
+    top: -280px; z-index: 1;
+    text-align: center;
+    font-family: Yezzy;
+    font-size: 30px;
+    color: orangered;
+    box-sizing: border-box;
+  }
+  .button {
+    position: relative; 
+    top: -440px; z-index: 1;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: Adidas;
+  }
+  .button button{
+    background: black; 
+     text-align: center; border-radius: 5px; 
+    color: white; border: none; 
+    font-size: 30px;
+    opacity: 0.7;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    transition: all 1s ease;
+    cursor: pointer;
+  }
+  .button button:hover{
+    background: black; 
+    color: orangered;
+  }
+
+  .caption1 {
+    position: relative; 
+    top: -420px; z-index: 1;
+    padding-left: 140px;
+    font-family: Adidas;
+    font-size: 60px;
+    box-sizing: border-box;
+    opacity: 0.9;
+  }
+  .caption1 a{text-decoration: none;color:  rgb(3, 133, 204); display: inline-block; box-sizing: border-box;}
+  .p1 {
+    position: relative; 
+    top: -440px; z-index: 1;
+    padding-left: 140px;
+    font-family: Adidas;
+    font-size: 17px;
+    color: black;
+    box-sizing: border-box;
+  }
+  .button1 {
+    position: relative; 
+    top: -440px; z-index: 1;
+    padding-left: 140px;
+    box-sizing: border-box;
+  }
+  .button1 button{
+    background: rgb(3, 133, 204); box-sizing: border-box;
+    font-family: Adidas;
+    color: white; border: none; 
+    font-size: 17px;
+    opacity: 0.9;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .caption2 {
+    position: relative; 
+    top: -420px; z-index: 1;
+    padding-left: 1110px;
+    font-family: Adidas;
+    font-size: 60px;
+    box-sizing: border-box;
+    opacity: 0.9;
+  }
+  .caption2 a{text-decoration: none;color: white; box-sizing: border-box;}
+  .p2 {
+    position: relative; 
+    top: -500px; z-index: 1;
+    padding-left: 1000px;
+    font-family: Adidas;
+    font-size: 60px;
+    color: white;
+    box-sizing: border-box;
+    opacity: 0.9;
+  }
+.adidas{
+  width: 100%;
+  background-color: white;
+  margin-top: 3%;
+}
+.adidas button{
+  width: 100%;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: white;
+  border: none;
+  /* border-radius: 15px;
+  box-shadow: 0 3px #999; */
+  font-family: Adidas;
+}
+.vans button{
+  width: 100%;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: white;
+  border: none;
+  font-family: Adidas;
+  position: relative;
+  top: -200px;
+}
+.nike1 button{
+  width: 100%;
+  display: inline-block;
+  top:-550px;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: white;
+  border: none;
+  font-family: Adidas;
+  position: relative;
+}
+}
+.nike .vans{
+  width: 100%; 
+  background-color: white;
+}
+.ni1{ 
+  margin-top: 5%;
+  margin-left: 1.96%;
+  float: left;
+}
+.nike button, .vans button{margin-top: 3%;}
+
+.cls {
+  float: left; 
+  margin-left: 253px; margin-top: 25px; 
+  width: 500px; height: 300px; 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(v2.jpg);
+  background-repeat: no-repeat; 
+  position: relative;
+  top:-150px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-image: url(v2a.jpg);
+}
+.overlay1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-image: url(v3a.jpg);
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-image: url(36_banner.png);
+}
+
+.cls:hover .overlay {
+  opacity: 1;
+}
+.cls1:hover .overlay1 {
+  opacity: 1;
+}
+
+.cls2:hover .overlay2 {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-decoration: none;
+  font-family: Adidas;
+  background-color: black;
+  opacity: 0.9;
+  width: 300px;
+  height: 50px;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: Adidas;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.cls1 {float: left; margin-left: 25px; margin-top: 25px;
+    width: 500px; height: 300px; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(v3.jpg);
+    background-repeat: no-repeat; 
+    position: relative;
+    top: -150px;
+  }
+
+  .cls2 {float: left; margin-left: 252px; margin-top: 25px;
+    width: 1027px; height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(hi.jpg);
+    background-repeat: no-repeat; 
+    position: relative;
+    top:-150px;
+  }
+  .mn {
+    float: left; margin-top: 0%;
+    width: 100%; height: 300px;
+    background-color: black;
+    color: white;
+    font-family: Adidas;
+    font-size: 25px;
+    padding-left: 20%;
+    box-sizing: border-box;
+  }
+
+  #khachhang{position: relative; z-index: 2; top: 15px}
+  .off{
+    font-size: 15px;
+    position: relative;
+    z-index: 1;
+    top: -80px;
+  }
+
+  .mn input{
+    margin-top: 2.6%;
+    width: 300px;
+    height: 35px;
+    padding-left: 15px;
+    box-sizing: border-box
+  }
+ .mncon{
+    float: left;
+    width: 600px;
+    height: 100px;
+  }
+
+  .mn2 {
+    float: left;
+    width: 100%; height: 50px;
+    background-color: grey;
+    color: black;
+    text-align: center;
+    padding-left: 60%;
+    box-sizing: border-box;
+    box-shadow: black
+  }
+}

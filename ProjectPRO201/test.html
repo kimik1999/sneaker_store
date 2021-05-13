@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        #input[data-state="valid"] {
+          border-color: hsl(120, 76%, 50%);
+        }
+        
+        /* Show red borders when filled, but invalid */
+        #input[data-state="invalid"] {
+          border-color: hsl(0, 76%, 50%);
+          }
+        </style>
+
+</head>
+<body>
+   
+    <form action="/action_page.php">
+        <h2>Empty Validation with pure CSS</h2>
+        <p>Type something into this input field below.</p>
+        <ul>
+          <li>When input is filled: Borders turn green</li>
+          <li>When validation fails: Borders turn red</li>
+        </ul>
+        <div>
+          <label>Label </label>
+          <input type="text" id="input" placeholder="Type something in here" value="123456">
+          <input type="submit" value="Update" name="btAction" id="submit-btn"/>
+          </div>
+      </form>
+
+
+
+    <script>
+        const input = document.querySelector("#input");
+        
+        input.addEventListener('input', evt => {
+          const value = input.value;
+          
+          if (value.length < 6 || value.length > 30) {
+            input.dataset.state = 'invalid';
+             
+            return;
+          }
+          
+          const trimmed = value.trim();
+          
+          if (trimmed) {
+            input.dataset.state = 'valid';
+          } else {
+            input.dataset.state = 'invalid';
+          }
+        });
+        
+        </script>
+        
+</body>
+</html>

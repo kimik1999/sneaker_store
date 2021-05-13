@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" media="screen" href="bar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Check Out</title>
+    <style>
+        @font-face{
+    font-family: Adidas;
+    src: url(texgyreadventor-bold.otf);
+  }
+        body{
+            margin: 0%;
+            font-family: AdihausDIN,Helvetica,Arial,sans-serif;
+        }
+        
+        #giohang {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            padding-left: 17%;
+            box-sizing: border-box;
+            padding-top: 150px;
+}
+#giohang img {
+    width: 100px;
+    height: 120px;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box
+}
+#giohang table {
+    width: 80%;
+    height: auto;
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 15px;
+    box-sizing: border-box
+
+}
+#khachhang {
+    width: 100%;
+    height: 300px;
+    margin-top: 2%;
+    text-align: center;
+}
+#khachhang input[type='text']{
+    width: 300px; height: 40px;
+    margin-top: 1%;
+}
+#khachhang input[type='button']{
+    width: 300px; height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    padding-top: 4px;
+    box-sizing: border-box;
+    border: none;
+    margin-top: 1%;
+    margin-left: -0.1%;
+}
+</style>
+    <script src="sanpham.js"></script>
+    <!-- <script src="nike.js"></script> -->
+</head>
+
+<body onload="xemgiohang()">
+    <div>
+        <div class="nav">
+            <div class="nav_header">
+                <div class="nav_title">
+                    <a href="barfixed.html"><img src="Untitled.png" /></a>
+                </div>
+            </div>
+            <div class="nav_btn">
+                <label for="nav_check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <input type="checkbox" name="" id="nav_check">
+            <div class="nav_links">
+                    <ul>
+                            <li>
+                                <a href="men.html">MEN</a>
+                                <ul>
+                                        <li><a href="adidas.html">Adidas</a></li>
+                                        <li><a href="nike.html">Nike</a></li>
+                                        <li><a href="vans.html">Vans</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                            <a href="women.html">WOMEN</a>
+                            <ul>
+                                    <li><a href="adidas.html">Adidas</a></li>
+                                    <li><a href="nike.html">Nike</a></li>
+                                    <li><a href="vans.html">Vans</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                    <a href="kid.html">KIDS</a>
+                            <ul>
+                                    <li><a href="kiddas.html">ADIDAS</a></li>
+                                    <li><a href="kidni.html">NIKE</a></li>
+                                    <li><a href="kidvans.html">VANS</a></li>
+                                </ul>
+                            </li>
+                            <div class="menu-spacer___1cHmT"></div>
+                            <a href="#">SPORTS</a>
+                            <a href="#">BRANDS</a>
+                        </ul>
+                <a href="chitiet.html" style="margin-left:55%;"><i class="fa fa-cart-plus" aria-hidden="true" style="font-size:30px"></i></a>
+                <a href="https://www.facebook.com/" style="margin-left:-1%;"><i class="fa fa-facebook-square" style="font-size:30px"></i></a>
+                <a href="https://www.instagram.com/" style="margin-left:-0.9%;"><i class="fa fa-instagram" style="font-size:30px"></i></a>
+            </div>
+        </div>
+        <div id="giohang"></div>
+        <div id="khachhang">
+            <input type="text" placeholder="nhap ten" id="t1" /> <br>
+            <input type="text" placeholder="nhap phone" id="t2" /> <br>
+            <input type="button" value="Check out" onclick="checkout()" />
+        </div>
+</body>
+
+</html>

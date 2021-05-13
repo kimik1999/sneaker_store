@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="bar.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="text.css" />
+    <script src="sanpham.js"></script>
+    <style>
+        .hinh{
+                width: 100%;
+                background-color: rgb(237, 234, 234);
+                float: left;
+                height: auto;
+            } 
+            .tong {width: 100%; height: 800px;}
+            button{
+                text-align: center;
+                border: none;
+                height: 35px;
+                font-size: 25px;
+                margin-left: 42%;
+                box-sizing: border-box;
+                background-color: rgb(3, 133, 204); 
+                width: 250px;
+                float: left;
+                margin-bottom: 10px;
+                transition: all 1s ease;
+                color: white
+            }
+            button:hover{
+                color: black
+            }
+            .hover {margin-top: 5%;position: relative; z-index: 2;overflow: hidden;}
+            .hover1{box-sizing: border-box;position: relative; top: -686px; padding-left: 32.1%;transition: transform 20s;overflow: hidden;}
+            .hover2{box-sizing: border-box;position: relative; top: -690px; padding-left: 32.1%; z-index: 2;transition: transform 20s;overflow: hidden;}
+            .hover3{box-sizing: border-box;position: relative; top: -1376px; padding-left: 57.1%;transition: transform 20s;overflow: hidden;}
+            .hover4{box-sizing: border-box;position: relative; top: -1380px; padding-left: 74.1%;transition: transform 20s;overflow: hidden;}
+            .hover img, .hover2 img, img {
+              transition: transform 20s;
+              overflow: hidden;
+              }
+ 
+            .hover img:hover,.hover2 img:hover, img:hover {
+               transform: scale(1.5,1.5);
+              }
+              h2{
+                  position: relative;
+                  top:-60px;
+                  font-family: Adidas;
+                  font-size: 60px;
+                  text-align: center
+              }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="nav">
+            <div class="nav_header">
+                <div class="nav_title">
+                    <a href="barfixed.html"><img src="Untitled.png" /></a>
+                </div>
+            </div>
+            <div class="nav_btn">
+                <label for="nav_check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <input type="checkbox" name="" id="nav_check">
+            <div class="nav_links">
+                <a href="men.html">MEN</a>
+                <a href="women.html">WOMEN</a>
+                <a href="#">KIDS</a>
+                <div class="menu-spacer___1cHmT"></div>
+                <a href="#">SPORTS</a>
+                <a href="#">BRANDS</a>
+                <a href="chitiet.html" style="margin-left:55%;"><i class="fa fa-cart-plus" aria-hidden="true" style="font-size:30px"></i></a>
+                <a href="https://www.facebook.com/" style="margin-left:-1%;"><i class="fa fa-facebook-square" style="font-size:30px"></i></a>
+                <a href="https://www.instagram.com/" style="margin-left:-0.9%;"><i class="fa fa-instagram" style="font-size:30px"></i></a>
+            </div>
+        </div>
+        <div class="hinh">
+            <a><img src="ni1.jpg" width="100%" height="650px"></a>
+            <p style="padding-top:5%;text-align: center; box-sizing:border-box; font-size: 25px">P.O.D.SYSTEM
+                celebrates the same mantra that has helped footballer <br>
+                Paul Pogba succeed: Great alone, better together.</p>
+
+            <button onclick="window.location.href='men.html';">SHOP MEN →</button>
+            <br>
+            <br>
+            <button onclick="window.location.href='women.html';">SHOP WOMEN →</button>
+            <div class="tong">
+            <div class="hover">
+                    <img src="12.jpg" alt="">
+              </div>
+              <div class="hover1">
+                      <img src="11.jpg" alt="">
+                </div>
+                <div class="hover2">
+                        <img src="10.jpg" alt="" height="429px">
+                  </div>
+                  <div class="hover3">
+                        <img src="14.jpg" alt="" width="100%" height="253px">
+                  </div>
+                  <div class="hover4">
+                        <img src="15.jpg" alt="" width="393.3px" height="429px">
+                  </div>
+                  
+                </div>
+                <h2>“THE PEOPLE WHO HAVE YOUR BACK ARE THE PEOPLE YOU WANT TO MAKE PROUD.”</h2>
+                <p style="text-align: center; position: relative; top: -60px; font-size: 20px"> We're all made of elements that pushed us along the way.
+                     <br> Paul Pogba has grown from support systems 
+                that made <br> him more than another kid from Paris, but an international icon.</p>
+                  <div class="divcuoi">
+                <div class="mn" style="margin-top: 0%">
+                        <div class="mncon"><h3>SIGN UP FOR NEWS & GET <span style="color:crimson;">15% OFF</span></h3></div>
+                        <div id="khachhang">
+                            <input type="text" placeholder="emails" id="mn1" /> <br>
+                            <input type="button" value="Check out" onclick="checkout1()" style="border: none"/>
+                        </div>
+                        <div><p class="off"><br>By clicking the "Sign up" button, I confirm I am over 13 years of age.<br>
+                            Sign me up for adidas emails, featuring exclusive offers, latest product info,<br> news about upcoming events, and more.
+                             See our adidas privacy policy<br> for details. Selected products may be excluded<br> from the 15% off promotion.</p></div>
+                    </div>
+                    <!-- div cuối tên cty -->
+                    <div class="mn2"><p>Terms & Conditions Privacy Policy © 2018 ShoesFL Group</p></div>
+                </div>
+        </div>
+        
+        
+</body>
+
+</html>

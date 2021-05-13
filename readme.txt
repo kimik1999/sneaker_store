@@ -1,0 +1,1 @@
+mở file barfixed.html để xem toàn bộ web

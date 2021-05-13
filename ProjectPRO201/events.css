@@ -1,0 +1,56 @@
+* {box-sizing: border-box}
+
+@font-face{
+    font-family: Adidas;
+    src: url(texgyreadventor-bold.otf);
+  }
+
+  @media only screen and (min-width: 768px) {
+    .ev{
+        background-color: gainsboro;
+        height: 200px;
+        width: 1000px;
+        margin-left: 17%;
+    }  
+    .h4{
+          font-family: Adidas;
+          font-size: 20px;
+          text-align: center;
+          margin-top: 5%;
+        } 
+    .h5{
+            font-family: Adidas;
+            font-size: 15px;
+            text-align: center;
+          } 
+          .h6{
+           float: left;
+          } 
+      .h4a{
+          text-align: center;
+          border: solid 2px;
+          border-radius: 5%;
+          background: none;
+          width: 80px;
+          height: 30px;
+          cursor: pointer;
+          margin-top: 2%;
+          margin-bottom: 2%;
+      }
+      .h4a:hover{
+          color: crimson
+      }
+      .ev8{
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 13.5%;
+        float: left;
+       }
+       .ev8con{
+           float: left;
+          margin-top: 2%;
+          margin-bottom: 2%;
+          margin-left: 1.5%;
+          box-sizing: border-box
+       }
+  }

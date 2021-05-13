@@ -1,0 +1,170 @@
+
+* {box-sizing: border-box}
+body {margin:0}
+.mySlides {display: none; height: 500px;display: inline-block;width: 100%;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -90px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: crimson;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 768px) {
+  .prev, .next,.text {font-size: 11px}
+  .prev, .next {
+    margin-top: -205px; 
+  }
+  .mySlides {display: none; height: 100px;}
+  .dot {
+    height: 8px;
+    width: 8px;
+  }
+  .caption {
+    position: relative; 
+    top: -85%; z-index: 1;
+    text-align: center;
+    font-family: Yezzy;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+  .caption a{text-decoration: none; color: white;}
+  .p {
+    position: relative; 
+    top: -75%; z-index: 1;
+    text-align: center;
+    font-family: Yezzy;
+    font-size: 0.5em;
+    color: orangered;
+    box-sizing: border-box;
+  }
+  .button {
+    position: relative; 
+    top: -115%; z-index: 1;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .button button{
+    background: black; 
+    text-align: center; border-radius: 5px; 
+    color: white; border: none; 
+    font-size: 0.5em;
+    opacity: 0.7;
+    box-sizing: border-box;
+  }
+  .caption1 {
+    position: relative; 
+    top: -100%; z-index: 1;
+    text-align: left;
+    font-family: Adidas;
+    padding-left: 15%;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+  .caption1 a{text-decoration: none; color: white;}
+  .p1 {
+    position: relative; 
+    top: -102%; z-index: 1;
+    text-align: left;
+    padding-left: 15%;
+    font-family: Adidas;
+    font-size: 0.1em;
+    color: white;
+    box-sizing: border-box;
+  }
+  .button1 {
+    position: relative; 
+    top: -102%; z-index: 1;
+    text-align: left;
+    padding-left: 15%;
+    box-sizing: border-box;
+  }
+  .button1 button{
+    background: rgb(3, 133, 204);  
+    color: white; border: none; 
+    font-size: 0.5em;
+    opacity: 0.9;
+    box-sizing: border-box;
+  }
+  .caption2 {
+    position: relative; 
+    top: -100%; z-index: 1;
+    text-align: left;
+    font-family: Adidas;
+    padding-left: 8%;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+  .caption2 a{text-decoration: none; color: crimson;}
+  .p2{
+    position: relative; 
+    top: -102%; z-index: 1;
+    text-align: left;
+    padding-left: 8%;
+    font-family: Adidas;
+    font-size: 0.1em;
+    color: black;
+    box-sizing: border-box;
+  }
+
+}
